@@ -1,0 +1,72 @@
+.container-comics {
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .container__cards--comics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+   
+  .card--comic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer; /* Add cursor pointer for clickable effect */
+  }
+  
+  .card__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .card__title--comic {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .pagination-comics {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: none;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .no-description {
+    font-weight: bold;
+  }

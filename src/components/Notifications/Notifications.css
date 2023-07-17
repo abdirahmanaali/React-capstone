@@ -1,0 +1,27 @@
+.notifications {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notifications__image {
+    width: 7rem;
+}
+ 
+.notifications__message {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-shadow: -.09rem 0 var(--black), 0 .09rem var(--black), .09rem 0 var(--black), 0 -.09rem var(--black);
+}
+
+.notifications__message--info {
+    color: var(--secondary-color);
+}

@@ -1,0 +1,24 @@
+.input__group {
+    display: flex;
+}
+
+.input__group input {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button__search {
+    border-left: none;
+    color: var(--white);
+    padding: .4rem .275rem 0;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    background-color: var(--primary-color);
+} 
+
+.button__search:hover,
+.button__search:focus {
+    text-shadow: 0 0 .25rem var(--black);
+    background-color: var(--primary-color-light);
+}

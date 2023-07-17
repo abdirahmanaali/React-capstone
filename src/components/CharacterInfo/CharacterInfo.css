@@ -1,0 +1,103 @@
+.character-info {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 21rem;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    transform: translateX(23rem);
+    background-color: var(--gray);
+    transition-property: transform;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-function);
+} 
+
+.character-info--visible {
+    transform: translateX(0);
+}
+
+.character-info__header {
+    text-align: right;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('marvel-universe.jpeg');
+}
+
+.character-info__title {
+    text-align: center;
+    color: var(--white);
+    text-shadow: -.09rem 0 var(--black), 0 .09rem var(--black), .09rem 0 var(--black), 0 -.09rem var(--black);
+}
+
+.character-info__image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: .1rem solid var(--white);
+}
+
+.character-info__button {
+    line-height: 0;
+    padding: .2rem;
+    border-radius: 50%;
+    color: var(--dark);
+    border-color: var(--dark);
+}
+
+.character-info__button:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.character-info__content {
+    padding: .5rem 1rem;
+}
+
+.character-info__link-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+    justify-content: space-between;
+}
+
+.character-info__link-content a {
+    padding: .2rem .4rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--gray);
+    border: 1pt solid var(--primary-color);
+}
+
+.character-info__link-content a:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.character-info__link {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    width: fit-content;
+    color: var(--black);
+    font-family: var(--font-family-title);
+}
+
+.character-info__link:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, .8);
+}
+
+.character-info__available {
+    text-align: right;
+    font-size: var(--font-size-mini);
+    font-weight: var(--font-weight-base);
+}
+
+.character-info__list li:last-child::after {
+    content: '...';
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+}
